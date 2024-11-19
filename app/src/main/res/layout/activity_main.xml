@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Alunos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fillViewport="true"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TextView para RA -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RA"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtRa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="#E0E0E0" />
+
+            <!-- TextView para Nome -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="#E0E0E0" />
+
+            <!-- TextView para CEP -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEP"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtCep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="#E0E0E0" />
+
+            <!-- TextView para Logradouro (Desabilitado) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logradouro"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtLogradouro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="#E0E0E0" />
+
+            <!-- TextView para Complemento (Desabilitado) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complemento"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtComplemento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="#E0E0E0" />
+
+            <!-- TextView para Bairro (Desabilitado) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bairro"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtBairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="#E0E0E0" />
+
+            <!-- TextView para Cidade (Desabilitado) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cidade"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="#E0E0E0" />
+
+            <!-- TextView para UF (Desabilitado) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UF"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtUf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="#E0E0E0" />
+
+            <!-- Botão de Cadastrar -->
+            <Button
+                android:id="@+id/btnCadastrarAluno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#8BC34A"
+                android:text="Cadastrar"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+
+            <!-- Botão de Lista -->
+            <Button
+                android:id="@+id/btnLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#2196F3"
+                android:text="Lista"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
