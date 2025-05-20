@@ -1,10 +1,12 @@
-# Cadastro de Alunos
+# 🎓 Cadastro de Alunos
 
-Este projeto acadêmico é um aplicativo Android que permite o cadastro de alunos, utilizando a API ViaCEP para buscar endereços a partir do CEP fornecido.
+Projeto de um aplicativo Android que registra alunos com integração à API ViaCEP para busca automática de endereços.
 
-## Funcionalidades
+---
 
-- Cadastro de Alunos com os seguintes dados:
+## 🚀 Funcionalidades
+
+- **Cadastro de Alunos:**
   - RA (Registro de Aluno)
   - Nome
   - CEP
@@ -14,28 +16,31 @@ Este projeto acadêmico é um aplicativo Android que permite o cadastro de aluno
   - Cidade
   - UF (Unidade Federativa)
 
-- Validação de CEP e busca automática do endereço através do serviço ViaCEP.
+- **Validação de CEP:** Busca automática do endereço utilizando a API ViaCEP.
 
-- Exibição de mensagens de feedback para o usuário ao cadastrar um aluno ou ao buscar um endereço.
+- **Feedback para Usuário:** Mensagens de confirmação e erro.
 
-## Estrutura da Classe MainActivity
+---
 
-A classe `MainActivity` possui as seguintes funcionalidades principais:
+## 🛠 Tecnologias Usadas
 
-- **Inicialização da Interface**: Configura os componentes da interface gráfica no método `onCreate`.
+<p align="left">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Android_logo_2019.svg" alt="Android" width="50" height="50" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Retrofit_logo.png" alt="Retrofit" width="50" height="50" />
+    <img src="https://developer.android.com/images/branding/android-logo.svg" alt="Android Studio" width="50" height="50" />
+</p>
 
-- **Busca de Endereço pelo CEP**: Um `TextWatcher` que observa mudanças no campo CEP e faz uma chamada à API ViaCEP para preencher os campos de endereço automaticamente, se o CEP tiver 8 dígitos.
+- **Android**: Plataforma para desenvolvimento do aplicativo.
+- **Retrofit**: Biblioteca para gerenciamento de chamadas HTTP.
 
-- **Cadastro de Aluno**: Um método que cria um objeto `Aluno` com os dados fornecidos e o envia ao serviço correspondente. A interface é limpa após o sucesso do cadastro.
+---
 
-- **Gerenciamento de Erros**: Exibe mensagens Toast em caso de falha na busca do endereço ou no cadastro do aluno.
+## 📦 Como Usar
 
-## Como Usar
+1. **Instalação**: Clone este repositório e abra o projeto em uma IDE compatível com Android, como Android Studio.
 
-1. **Instalação**: Clone este repositório e abra o projeto em um IDE compatível com Android, como Android Studio.
-
-2. **Configuração da API**: Certifique-se de que as dependências do Retrofit estejam configuradas no seu arquivo `build.gradle`.
+2. **Configuração da API**: Assegure-se de que as dependências do Retrofit estejam no seu arquivo `build.gradle`.
 
 3. **Executar o Aplicativo**: Após configurar o ambiente, execute o aplicativo em um dispositivo ou emulador Android.
 
-4. **Cadastro de Alunos**: Preencha os campos e clique no botão "Cadastrar Aluno". O endereço será preenchido automaticamente ao digitar um CEP válido.
+4. **Cadastro de Alunos**: Preencha os campos e clique no botão "Cadastrar Aluno". O endereço será preenchido automaticamente ao inserir um CEP válido.
